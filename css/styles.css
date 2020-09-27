@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 10px auto;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.carousel-container .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+
+.carousel-container .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tran-effect {
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    padding: 20px;
+    font-size: 28px;
+    color: rgb(75, 75, 75);
+    background: rgb(219, 219, 219);
+    border-radius: 0px 50px 50px 0px;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+    padding: 20px;
+    font-size: 28px;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#prevBtn:focus, #nextBtn:focus {
+    outline: 0;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background: #fff;
+    color: #000;
+}
